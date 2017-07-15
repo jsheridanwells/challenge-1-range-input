@@ -1,13 +1,10 @@
-//select elements
 let number = document.getElementById('number');
 let range = document.getElementById('range');
 
-range.addEventListener('mouseup', function() {
-	let rangeVal = this.value;
-	number.value = rangeVal;
+range.addEventListener('mousemove', function() {
+	number.value = this.value;
 });
 
 number.addEventListener('keyup', function() {
-	let numVal = this.value;
-	range.value = numVal;
+	range.value = this.value;
 })
