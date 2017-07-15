@@ -7,4 +7,4 @@ range.addEventListener('mousemove', function() {
 
 number.addEventListener('keyup', function() {
 	range.value = this.value;
-})
+});
